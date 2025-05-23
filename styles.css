@@ -1,0 +1,324 @@
+/* Grundläggande stilar för hela sidan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Webbplatsens sidhuvud (ovanför huvudbilden) */
+.site-header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+/* Innehåll i sidhuvudet (bild och nav) */
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Huvudbilden högst upp */
+.main-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+}
+
+/* Navigationsmenyn */
+.main-nav {
+    background-color: #e0d1b3;
+    /* Din beige färg för navigationen */
+    border-radius: 25px;
+    padding: 10px 0;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* För hamburger-meny-knappen */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Horisontell meny för desktop */
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #d0c1a3;
+}
+
+.nav-list a.active {
+    background-color: #d0c1a3;
+    color: #000;
+}
+
+/* Hamburgermeny-knapp (visas endast på mobil) */
+.hamburger-menu {
+    display: none;
+    /* Dölj som standard */
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+    padding: 5px 15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+    /* Säkerställ att den ligger ovanpå */
+}
+
+/* Huvudinnehållsområde (där text och boxar ligger) */
+.content-area {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Stil för informationsboxarna */
+.info-section {
+    background-color: #e0d1b3;
+    /* Din beige färg för boxarna */
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    /* Maxbredd för att få två kolumner */
+}
+
+.welcome-section {
+    max-width: 60%;
+    /* Exempel: Gör välkomstsektionen lite bredare */
+}
+
+.info-section h2,
+.info-section h3 {
+    color: #5d4a34;
+    /* Mörkare brun/beige för rubriker */
+    margin-top: 0;
+    text-align: center;
+    /* Centrera rubriker i boxarna */
+    margin-bottom: 20px;
+}
+
+/* Löptext (vänsterställd) */
+.info-section p {
+    line-height: 1.6;
+    text-align: left;
+    /* Explicit vänsterställd */
+}
+
+/* Sidfot */
+.site-footer {
+    background-color: #e0d1b3;
+    /* Din beige färg för sidfoten */
+    color: #333;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+}
+
+/* Stilar för formulärfält */
+.booking-form label,
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5d4a34;
+    /* Färg på labeltext */
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select,
+.booking-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 22px);
+    /* Justera för padding och border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Se till att padding ingår i bredden */
+}
+
+.booking-form textarea,
+.contact-form textarea {
+    resize: vertical;
+    /* Tillåter vertikal storleksändring */
+}
+
+.booking-form button.submit-button,
+.contact-form button.submit-button {
+    background-color: #5d4a34;
+    /* Mörkare beige/brun knapp */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    /* Knapp fyller utrymmet */
+}
+
+.booking-form button.submit-button:hover,
+.contact-form button.submit-button:hover {
+    background-color: #3e3124;
+    /* Mörkare vid hovring */
+}
+
+.radio-group {
+    margin-top: 20px;
+    text-align: left;
+    /* Vänsterställd för formulär */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    /* Normalvikt för radio-labels */
+    color: #333;
+}
+
+
+/* Stil för Google Maps iframe */
+.map-container {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    /* För att runda hörnen på iframen inuti */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    /* Viktigt för responsivitet */
+    height: 300px;
+    /* Fast höjd */
+    display: block;
+    border: none;
+    /* Ta bort standardramen */
+}
+
+/* Responsivitet för mobil */
+@media (max-width: 768px) {
+
+    .header-content,
+    .content-area,
+    .site-footer {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Visa hamburgermeny och dölj standardnavigering */
+    .hamburger-menu {
+        display: block;
+        /* Visa hamburgermeny-knappen */
+    }
+
+    .main-nav {
+        background-color: #e0d1b3;
+        border-radius: 0;
+        /* Inga rundade hörn på mobilnav */
+        width: 100%;
+        /* Nav tar upp hela bredden */
+        height: auto;
+        /* Anpassa höjden */
+        box-shadow: none;
+        padding: 0;
+        position: static;
+        transform: translateY(0);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        /* Länkar under varandra på mobil */
+        align-items: center;
+        /* Centrera länkar */
+        padding: 10px 0;
+        display: none;
+        /* Dölj som standard för mobil tills hamburgermenyn aktiveras */
+    }
+
+    .nav-list.open {
+        display: flex;
+        /* Visa när den är "öppen" */
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+        width: 90%;
+    }
+
+    .nav-list a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 15px;
+        /* Större klickbar yta */
+    }
+
+    .content-area {
+        flex-direction: column;
+        /* Boxarna under varandra på mobil */
+        padding: 0 15px;
+    }
+
+    .info-section {
+        max-width: 100%;
+        /* Boxarna tar upp hela bredden */
+        margin-bottom: 20px;
+    }
+
+    .welcome-section {
+        max-width: 100%;
+        /* Även välkomstsektionen tar full bredd */
+    }
+}

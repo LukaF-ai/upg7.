@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="boka ditt rum paa exotic hotel i gijon. vaelj mellan vaara olika rumstyper och planera din vistelse hos oss.">
+    <title>exotic hotel - boka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <img src="hotel.webp" alt="exotic hotel poolomraade" class="main-image">
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">välkommen</a></li>
+                    <li><a href="boka.html" class="active">boka</a></li>
+                    <li><a href="hitta.html">hitta</a></li>
+                    <li><a href="kontakta.html">kontakta</a></li>
+                </ul>
+                <button class="hamburger-menu" aria-label="oeffna meny" id="hamburger-button">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <section class="info-section">
+            <h2>boka ditt rum</h2>
+            <form action="#" method="POST" class="booking-form">
+                <label>for="förnamn">förnamn:</label>
+                <input type="text" id="förrnamn" name="förrnamn" required>
+
+                <label for="efternamn">efternamn:</label>
+                <input type="text" id="efternamn" name="efternamn" required>
+
+                <label for="rumstyp">rumstyp:</label>
+                <select id="rumstyp" name="rumstyp">
+                    <option value="standard">standardrum</option>
+                    <option value="deluxe">deluxerum</option>
+                    <option value="svit">svit</option>
+                </select>
+
+                <label for="ankomstdatum">ankomstdatum:</label>
+                <input type="date" id="ankomstdatum" name="ankomstdatum" required>
+
+                <label for="avresedatum">avresedatum:</label>
+                <input type="date" id="avresedatum" name="avresedatum" required>
+
+                <label for="gaester">antal gaester:</label>
+                <input type="number" id="gaester" name="gaester" min="1" value="1" required>
+
+                <label for="oevrigt">övriga öenskemal:</label>
+                <textarea id="oevrigt" name="oevrigt" rows="4"></textarea>
+
+                <div class="radio-group">
+                    <input type="radio" id="villkor-ja" name="acceptera-villkor" value="ja" required>
+                    <label for="villkor-ja">jag accepterar bokningsvillkoren</label>
+                </div>
+
+                <button type="submit" class="submit-button">skicka bokning</button>
+            </form>
+        </section>
+
+        <section class="info-section">
+            <h3>viktig information</h3>
+            <p>Läs noggrant igenom våra bokningsvillkor innan du skickar din bokning. Vi reserverar oss för eventuella
+                prisjusteringar.</p>
+            <p>Vid avbokning mindre än 24 timmar före ankomst debiteras halva kostnaden. Kontakta oss om du har frågor.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>exotic hotel | 33207 gijon | 123 45 gijon | 015 - 52 44 76</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

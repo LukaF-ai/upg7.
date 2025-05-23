@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="kontakta exotic hotel i gijon foer fraagor, bokningar eller support. hitta vaara kontaktuppgifter och skicka ett meddelande.">
+    <title>exotic hotel - kontakta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <img src="hotel.webp" alt="exotic hotel poolomraade" class="main-image">
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">välkommen</a></li>
+                    <li><a href="boka.html">boka</a></li>
+                    <li><a href="hitta.html">hitta</a></li>
+                    <li><a href="kontakta.html" class="active">kontakta</a></li>
+                </ul>
+                <button class="hamburger-menu" aria-label="oeffna meny" id="hamburger-button">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <section class="info-section">
+            <h2>kontakt info:</h2>
+            <p><strong>telefon:</strong> 028 - 283 98 34</p>
+            <p><strong>e-post:</strong> exotichotell2025@gmail.com</p>
+            <p>vi svarar gärna på dina frågor och hjölper dig med din bokning!</p>
+        </section>
+
+        <section class="info-section">
+            <h3>skicka ett meddelande</h3>
+            <form action="#" method="POST" class="contact-form">
+                <label for="ditt-namn">ditt namn:</label>
+                <input type="text" id="ditt-namn" name="ditt-namn" required>
+
+                <label for="din-epost">din e-post:</label>
+                <input type="email" id="din-epost" name="din-epost" required>
+
+                <label for="ditt-meddelande">ditt meddelande:</label>
+                <textarea id="ditt-meddelande" name="ditt-meddelande" rows="5"></textarea>
+
+                <button type="submit" class="submit-button">skicka</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>exotic hotel | 33207 gijon | 123 45 gijon | 015 - 52 44 76</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
